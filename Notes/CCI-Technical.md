@@ -19,4 +19,13 @@
 
 # Four Modes of Questions 
 ## Sanity Check 
+- Easy problem-solving/ design questions
+- Used to filter out worst candidates 
 ## Quality Check 
+- Slightly more challenging questions designed to make a candidate really think. 
+- Used when algorithmic problems are of high importance.
+## Specialist Questions 
+- Used to test knowledge of specific topics
+- These skills can't quickly be learned on the job 
+## Proxy Knowledge  
+- Knowledge that you'd expect a candidate to know based on their level and current position

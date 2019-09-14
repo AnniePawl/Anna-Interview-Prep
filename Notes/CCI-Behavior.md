@@ -47,4 +47,11 @@ Desgined to dmonstrate passion for technology. Shows you're interetested in lear
 ## Presenting Personal Project 
 - Focus on 2 or 3 technical projects 
 - Really know you projects! 
-- 
+- Be prepared to talk about project's challenging components. What mistakes were made?
+- Describe your role (should be central)
+- Get ready to talk in technical depth! 
+- Alternatives? Trade offs?
+
+# How to Respond to Behavioral Questions 
+- Be specific, not arrogant! 
+- Limit detail
