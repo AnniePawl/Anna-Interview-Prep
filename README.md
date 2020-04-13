@@ -1,3 +1,0 @@
-# My-HackerRank
-
-HackerRank Challenges
