@@ -2,6 +2,19 @@
 
 
 # SOLUTION ONE (sorting = n log n )
+def return_largest_value(arr, k):
+    sorted_array = sorted(arr, reverse=True)
+    print(sorted_array)
+
+    result = []
+
+    for i in range(k):
+        print(sorted_array[i])
+        result.append(sorted_array[i])
+
+
+print("SOLUTION ONE:")
+print(return_largest_value([4, 3, 27, 3, 9], 2))
 
 
 # SOLUTION TWO
@@ -36,4 +49,5 @@ def k_largest_num(array, k):  # time o(k*n)
     return result
 
 
+print("SOLUTION TWO:")
 print(k_largest_num(array, k))
