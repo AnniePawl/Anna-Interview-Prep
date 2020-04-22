@@ -1,9 +1,5 @@
 # Parameter weekday is True if its a weekday, parameter vacation True is its vacation. We sleep in if it is not a weekday or we are on vacation. Return True if we sleep in
 
-# sleep_in(False, False) --> True
-# sleep_in(True, False) --> False
-# sleep_in(False, True) --> True
-
 # Solution 1
 
 
@@ -22,6 +18,6 @@ def sleep_in2(weekday, vacation):
     return(not weekday or vacation)
 
 
-print(sleep_in(False, False))
-print(sleep_in(True, False))
-print(sleep_in(False, True))
+print(sleep_in(False, False))  # True
+print(sleep_in(True, False))  # False
+print(sleep_in(False, True))  # True

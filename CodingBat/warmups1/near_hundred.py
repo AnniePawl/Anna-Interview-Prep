@@ -1,4 +1,4 @@
-# Given an integer n, return True if it is within 10 of 100 or 200.
+# Given an integer n, return True if it is within 10 of 100 or 200. abs(num) computes absolute value.
 
 
 def near_hundred(n):
