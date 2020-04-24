@@ -5,6 +5,13 @@
 # handles = [‘DogeCoin’, ‘YangGang2020’, ‘HodlForLife’, ‘fakeDonaldDrumpf’, ‘GodIsLove’, ‘BernieOrBust’]
 # my_handle = 'iLoveDogs'
 
+Step 1: Pick some simplifications.
+Step 2: Make a plan for solving with the simplifications. For the plan, think about which simplifications can be a helper function. Is there work that is repeated for each step?
+Step 3: Remove the simplifications and refine plan to work with it. How can you make use of helper functions? Think about different problem solving strategies. Are there data structures that can help you better solve this problem? What data are you tracking and how do you want to access it?
+Step 4: Pseudocode & code
+Step 5: Test your code
+Step 6: Time & Space complexity
+
 handles = ['iLoveDog', 'iHateCat']
 my_handle = 'iLoveDogs'
 number_of_suggestions = 1
@@ -21,7 +28,6 @@ def suggest(new_handle, twitter_handles, k):
 
   # Return k most similar handles
 
-
     # suggest(‘iLoveDogs’, handles, k=2) should return [‘GodIsLove’, ‘DogeCoin’]
 
     # Strategies
@@ -35,17 +41,12 @@ def suggest(new_handle, twitter_handles, k):
     # Implement only a similarity score helper function, then later use it to find similar handles.
     # Make letter matching case sensitive at first, then later make matching case insensitive.
     #
-a = (0, 1, 1, 1, 2, 3, 7, 7, 23)
 
 
-def count_elements(seq) -> dict:
+handles = ['iLoveDog', 'iHateCat']
+my_handle = 'iLoveDogs'
+number_of_suggestions = 1
 
+# HELPER FUNCTION  - find one most similar handle
 
-...     """Tally elements from `seq`."""
-...     hist = {}
-... for i in seq:
-...         hist[i] = hist.get(i, 0) + 1
-... return hist
-
-counted = count_elements(a)
-counted
+# HELPER FUNCTION - find score for your handle

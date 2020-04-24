@@ -2,8 +2,7 @@
 
 
 def same_first_last(nums):
-    if len(nums) >= 1:
-        return (nums[0] == nums[-1])
+    return len(nums) > 0 and nums[0] == nums[-1]
 
 
 print(same_first_last([1, 3, 4, 1]))  # True
