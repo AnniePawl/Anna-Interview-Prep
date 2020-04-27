@@ -14,6 +14,12 @@ Q: What are 2-3 ways you can simplify the problem?
 Brainstorm 2-3 ways to approach the problem.
 """
 
+# Pseudocode
+# Implement node class
+# Implement LL class
+
+If we divide length of LL by k - using remained( % ) to determine how many rotions
+
 
 class Node:
     # Constructor
