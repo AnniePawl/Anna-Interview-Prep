@@ -35,10 +35,13 @@ def max_subarray(a, size):
     max_ending_here = 0 # current sum 
 
     for i in range(0, size):
+        # add current num at i to current sum
         max_ending_here = max_ending_here + a[i]
+        # If current sum larger, update largest sum
         if (max_so_far < max_ending_here):
             max_so_far = max_ending_here
         
+        # If current nsum negative, we dont want to use it to add more nums, so we set it to 0
         if max_ending_here <0:
             max_ending_here = 0 
     return max_so_far
