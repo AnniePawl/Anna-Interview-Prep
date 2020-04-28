@@ -10,7 +10,7 @@ def array123(nums):
 
 
 def array123_v2(nums):
-    for i in range(0, len(nums)-2):
+    for i in range(len(nums)-2):
         if [1,2,3] == nums[i:i+3]:
             return True
     return False

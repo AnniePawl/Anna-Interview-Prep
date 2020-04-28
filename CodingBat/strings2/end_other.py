@@ -11,7 +11,7 @@ def end_other(a, b):
 
 
 def end_other2(a, b):
-    return (a.endswith(b) or b.endswith(a))
+    return (a.lower().endswith(b.lower()) or b.lower().endswith(a.lower()))
 
 
 print(end_other('Hiabc', 'abc'))  # True

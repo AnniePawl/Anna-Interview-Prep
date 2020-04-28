@@ -9,7 +9,14 @@ def double_char(str):
         # result = result + (str[i] * 2)
     return result
 
+def double_char_v2(str):
+    result = ""
+    for char in str:
+        result = result + char*2
+    return result 
 
 print(double_char("ABC"))  # AABBCC
 print(double_char("The"))  # TThhee
 print(double_char("Hippo"))  # HHiippoo
+
+print(double_char_v2("Gut")) #GGuutt

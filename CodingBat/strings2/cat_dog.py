@@ -11,7 +11,14 @@ def cat_dog(str):
             dog_count += 1
     return(cat_count == dog_count)
 
+# using built-in method .count()
+def cat_dog_v2(str):
+    return str.count("cat") == str.count("dog")
+
 
 print(cat_dog("dogcat"))  # True
 print(cat_dog("dogdogcat"))  # False
 print(cat_dog("catdogcatdog"))  # True
+
+print(cat_dog_v2("dogdogcat")) # False 
+print(cat_dog_v2("dogdogcatcat")) # True 

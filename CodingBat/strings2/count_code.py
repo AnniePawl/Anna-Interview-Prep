@@ -13,3 +13,4 @@ def count_code(str):
 print(count_code("codecodecode"))  # 3
 print(count_code("cozecopecore"))  # 3
 print(count_code("clone"))  # 0
+
