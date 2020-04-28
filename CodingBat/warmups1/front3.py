@@ -5,7 +5,14 @@ def front3(str):
     front = str[:3]
     return front+front+front
 
+# in one line
+def front3_short(str):
+    return str[:3] * 3
+
+
 
 print(front3('Java'))  # JavJavJav
 print(front3('Chocolate'))  # ChoChoCho
 print(front3('abc'))  # abcabcabc
+
+print(front3_short('Goob')) #GooGooGoo

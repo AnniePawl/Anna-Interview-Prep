@@ -10,7 +10,14 @@ def array_front9(nums):
             return True
     return False
 
+def array_front9_v2(nums):
+    return nums[:4].count(9) > 0
+
+
 
 print(array_front9([1, 3, 9, 4, 3, 2]))  # True
 print(array_front9([9, 2]))  # True
 print(array_front9([1, 3, 5, 4, 3, 9]))  # False
+
+print(array_front9([9,3,4,5])) # True
+print(array_front9([1,3,4,5])) # False

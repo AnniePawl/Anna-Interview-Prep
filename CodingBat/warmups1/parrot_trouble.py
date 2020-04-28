@@ -1,5 +1,6 @@
 # We have a loud parrot. Hour parameter is current hour in range 0...23. We are in trouble if  parrot is talking and hour is before 7 or after 20. Return True if we are in trouble
 
+# Here you need extra parenthesis around `or` clause since `and` binds more tightly
 
 def parrot_trouble(talking, hour):
     return(talking and (hour < 7 or hour > 20))

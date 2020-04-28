@@ -1,11 +1,13 @@
 # Given an integer n, return absolute difference between n and 21, except return double absolute difference if n over 21
+# abs() used to return distance between 2 nums
+
 
 
 def diff21(n):
     if n <= 21:
-        return 21-n
+        return abs(21-n)
     else:
-        return (n-21)*2
+        return abs(21-n)*2
 
 
 print(diff21(19))  # 2

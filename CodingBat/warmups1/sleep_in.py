@@ -18,6 +18,12 @@ def sleep_in2(weekday, vacation):
     return(not weekday or vacation)
 
 
+print("sleep_in")
 print(sleep_in(False, False))  # True
 print(sleep_in(True, False))  # False
 print(sleep_in(False, True))  # True
+
+print("sleep_in2")
+print(sleep_in2(False, False)) # True 
+print(sleep_in2(True, False)) # False
+print(sleep_in2(False, True)) # True 
