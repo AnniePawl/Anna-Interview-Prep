@@ -1,4 +1,4 @@
-# Given an array of ints length 3, return new array w/ element sin reverse order
+# Given an array of ints length 3, return new array w/ elements in reverse order
 
 
 def reverse3(nums):

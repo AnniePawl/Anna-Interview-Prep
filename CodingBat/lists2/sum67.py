@@ -1,17 +1,20 @@
 # Return sum of numbers in array, except ignore sections of numbers starting with 6 and extending to next 7. Every 6 will be followed by at least one 7
 
-# Attempt 1
+
 def sum67(nums):
+    count = 0 
+    blocked = False
 
-
-# Attempt 2 
-def sum67V2(nums):
-    # Remove region between 6 and 7
-    while 6 in nums:
-        position6 = nums.index(6)
-        position7 = nums[position6:].index(7) + position6
-        del nums[position6:position7+1]
-    
+    for n in nums:
+        if n == 6:
+            blocked = True
+            continue 
+        if n == 7 and blocked:
+            blocked = False 
+            continue 
+        if not blocked:
+            count += n
+    return count
 
 
 print(sum67([1, 2, 2]))  # 5
