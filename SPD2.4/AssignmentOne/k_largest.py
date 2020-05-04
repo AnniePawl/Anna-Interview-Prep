@@ -1,6 +1,11 @@
-# Given an array (a) of n numbers and a count k. Find K largest values in aray a
+# Given an array numbers and a count(k). Find the k largest values in the array 
 
-# SOLUTION ONE 
+# SOLUTION ONE -Using Sorting
+# Time Complexity: O(nlogn) b/c sorting + O(n)
+# Space Complexity:
+arr = [4, 3, 27, 30, 9]
+k = 2
+
 def return_k_largest_values(arr, k):
     sorted_array = sorted(arr, reverse=True)
     result = []
@@ -9,8 +14,8 @@ def return_k_largest_values(arr, k):
     return result
 
 
-print("SOLUTION ONE:")
-print(return_k_largest_values([4, 3, 27, 30, 9], 2))
+print("Testing K Largest V1:")
+print(return_k_largest_values(arr, k))
 
 
 # SOLUTION TWO
@@ -30,8 +35,8 @@ def k_largest_num(array, k):  # time o(k*n)
         result.append(largest)  # time o(1)
     return result
 
-print("SOLUTION TWO:")
-print(k_largest_num([13,56,7,43,9,22,9], 3))
+print("Testing K Largest V2:")
+print(k_largest_num(arr, k))
 
 
 
