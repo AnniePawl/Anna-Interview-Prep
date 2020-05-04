@@ -1,15 +1,10 @@
-# SPD 2.4 Assignment 1: Code 2 Solutions for Each Problem
+# Given an array of numbers and a target value, find two numbers that sum equals target. 
 
-## Problem 1: Two Sum
-Given an array numbers and a target value , find two numbers whose sum equals target.<br>
-
-**SOLUTION ONE - Brute Force** <br>
-**Time Complexity:** O(n^2) --> two for loops<br>
-**Space Complexity: O(1)** 
-```python
 numbers = [5,3,6,8,2,4,7]
 target = 10
-
+# SOLUTION ONE - Brute Force
+# Time Complexity: O(n^2) --> two for loops
+# Space Complexity: O(1)
 def two_sum_v1(numbers, target):
   for i in range(len(numbers)-1):
     for j in range(i+1, len(numbers)):
@@ -18,15 +13,10 @@ def two_sum_v1(numbers, target):
 
 print("Testing Two Sum V1 (Double For Loop)")
 print(two_sum_v1(numbers, target)) # [3,7], [6,4], or [8,2]
-```
 
-**SOLUTION TWO - Using Hash Table** <br>
-**Time Complexity:** O(n) - only one for loop <br>
-**Space Complexity:**  O(n) - storing dict object
-```python
-numbers = [5,3,6,8,2,4,7]
-target = 10
-
+# SOLUTION TWO - Using Hash Table
+# Time Complexity: O(n) - only one for loop
+# Space Complexity:  O(n) - storing dict object
 def two_sum_v2(numbers, target):
   hash_table = {}
   for i in range(len(numbers)):
@@ -37,4 +27,9 @@ def two_sum_v2(numbers, target):
 
 print("Testing Two Sum V2 (Hash Table)")
 print(two_sum_v2(numbers, target))
-```
+
+ 
+
+
+
+
