@@ -5,18 +5,25 @@ b = [3, 17, 4, 14, 6]
 target = 20
 
 # SOLUTION ONE 
-# Time Complexity: O(n^2) --> b/c 2 loops
+# Time Complexity: 
 # Space Complexity: 
 def complex_two_sum_v1(a, b, target):
-  for i in range(len(a)):
-    for j in range(len(b)):
-      if (a[i] + )
+  a.sort()
+  b.sort()
+
+  results = []
+  left = 0 
+  right = len(b)-1
+
+  # find differences
+  while(left < len(b))
+
+  
+
  
 
-
-
 print("Testing complex two sum v1: ")
-# print(complex_two_sum_v1(a, b, target))
+print(complex_two_sum_v1(a, b, target))
 # [13,6], [4,17], or [5,14]
 
 # SOLUTION TWO 
