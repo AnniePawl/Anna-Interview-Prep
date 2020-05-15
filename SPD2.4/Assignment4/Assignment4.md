@@ -28,6 +28,11 @@ class LinkedList():
 
 
     # ROTATE BY K NODES
+
+    # Sample LL = 1 -> 2 -> 3 -> 4 -> 5 -> 6
+    # K = 3 
+    # Sample Output = 4 -> 5-> 6-> 1 ->2 -> 3
+
     # Patterns: 
       # Kth node always becomes tail
       # Kth + 1 node always becomes head 
@@ -50,7 +55,7 @@ class LinkedList():
       new_tail = 
 
       # loop to find kth node 
-      while(current):
+      while current.next is not None:
         if count == k:
           new_head = current.data
           new_tail = current.next 
@@ -61,7 +66,4 @@ class LinkedList():
 
      
 
-# Sample LL = 1 -> 2 -> 3 -> 4 -> 5 -> 6
-# K = 3 
-# Sample Output = 4 -> 5-> 6-> 1 ->2 -> 3
 ```

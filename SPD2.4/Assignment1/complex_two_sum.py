@@ -28,7 +28,7 @@ def complex_two_sum(a, b, target):
       elif (a[left] + b[right]) > target:
           right-= 1
       elif (a[left] + b[right]) == target:
-          l, right= l+1, r-1
+          left, right= left+1, right-1
   return possible_solutions
 
 print(complex_two_sum(a,b,target))

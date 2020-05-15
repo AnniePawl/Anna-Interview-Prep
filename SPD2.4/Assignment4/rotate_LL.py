@@ -12,7 +12,7 @@ class LinkedList():
     self.head = None 
     self.tail = None
     # append items to LL
-    for item  in n items:
+    for item in items:
       self.append(item)
 
     # append method
@@ -24,7 +24,6 @@ class LinkedList():
       else: 
         self.tail.next = node
         self.tail = self.tail.next
-
 
     # ROTATE BY K NODES
     # Patterns: 
@@ -56,7 +55,9 @@ class LinkedList():
         current = current.next
 
 
-
+if __name__ == '__main__':
+  ll = LinkedList([1,2,3,4,5,6])
+  print(ll)
      
 
 # Sample LL = 1 -> 2 -> 3 -> 4 -> 5 -> 6

@@ -27,4 +27,50 @@ class LinkedList():
       self.tail.next = node
       self.tail = self.tail.next # reset tail
 
+
+    def findMiddle(L):  #O(n)
+      # Time O(n)
+      # Space O(n)
+      # array itialized to store index to value 
+      items_array = [] # O(1)
+      curr = L.head # O(1)
+      # append values to array 
+      while curr != None: # loop until pointer = none # O(n)
+        items_array.append(curr.data) # O(n)
+        curr = curr.next  #O(1)
+      middle = len(items_array)//2   # find middle index O(1)
+      return items_array[middle] # return middle value O(1)
+
+    # Test! 
+    def testFindMiddleValue():
+      L = LinkedList(["a", "b", "c"])
+      print("Passed!")
+      assert(findMiddle(L) == "b")
+  
+    testFindMiddleValue()
+
+```
+
+## Given a singly linked list, reverse order by modifying node's links 
+
+```python 
+  def reverse_order(L):
+    prev = None
+    current = self.head 
+    while current is not None:
+      next = current.next 
+      current.next = prev 
+      prev = current 
+      current = next
+    self.head = prev
+      
+  
+# Test! 
+def testReverseOrder():
+  L = LinkedList(["a", "b", "c"])
+  print("Passed!")
+  assert(reverse_order(L) == ["c", "b", "a"])
+  
+testReverseOrder()
+  
 ```

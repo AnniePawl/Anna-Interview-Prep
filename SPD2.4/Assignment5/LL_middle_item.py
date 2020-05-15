@@ -27,7 +27,7 @@ class LinkedList():
       self.tail.next = node
       self.tail = self.tail.next # reset tail
 
-def findMiddle(L): O(n):
+def findMiddle(L):  #O(n)
   # Time O(n)
   # Space O(n)
   # array itialized to store index to value 
