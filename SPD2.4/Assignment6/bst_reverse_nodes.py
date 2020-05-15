@@ -34,6 +34,19 @@ class BinaryTree:
     else:
       self._insert(item, self.root)
 
+  # Reverse tree w/ stack ?
+  # Time Complexity: O(n)
+  def reverse(root):
+    stack = [root]
+    while stack:
+      node = stack.pop(-1)
+      if node:
+        node.left, node.right = node.right, node.left 
+        stack.append(node.left)
+        stack.append(node.right)
+    return root 
+
+
 
 # TEST
 
