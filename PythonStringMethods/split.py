@@ -7,4 +7,3 @@ print(Cats.split()) # ['Connor', 'Callie', 'Carmen', 'Cody']
 # Split string at comma
 greeting = "Hello, Super Star!"
 print(greeting.split(",")) # ["Hello", "Super Star!"]
-
