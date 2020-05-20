@@ -10,7 +10,6 @@
 def sockMerchant(n,ar):
   pairs = 0
   sock_set = set(ar)
-  print("sock set: " + str(sock_set))
   for sock in sock_set:
     pairs +=  ar.count(sock) //2
   print("pairs")

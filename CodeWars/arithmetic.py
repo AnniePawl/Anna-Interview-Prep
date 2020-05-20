@@ -19,6 +19,7 @@ def arithmetic_v2(a, b, operator):
     'divide': a /b
   } [operator]
 
+
 print(arithmetic(10,5, "add")) # 15
 print(arithmetic(10,5, "subtract")) # 5
 print(arithmetic(10,5, "divide")) # 2

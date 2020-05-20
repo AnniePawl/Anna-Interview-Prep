@@ -1,3 +1,5 @@
+# Find a pair adding to sum in Binary Search Tree 
+
 # Binary Tree Nodes:
 class Node:
   def __init__(self, data):

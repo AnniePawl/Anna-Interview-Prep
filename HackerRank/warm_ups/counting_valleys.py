@@ -11,13 +11,6 @@ def countingValleys(n,steps):
   num_of_valleys = 0
   altitude = 0 
 
-  for step in steps:
-    if step == "D":
-      altitude +=1 
-    else: 
-      altitude -=1
-      if altitude == 0:
-  return altitude
 
 
 
