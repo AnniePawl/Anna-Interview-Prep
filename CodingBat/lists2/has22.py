@@ -7,9 +7,17 @@ def has22(nums):
             return True
     return False
 
+def has22_v2(nums):
+    while 2 in nums:
+        return nums[nums.index(2)+1 ] == 2
+
 
 
 print(has22([1, 2, 2]))  # True
 print(has22([2, 1, 2]))  # False
 print(has22([2, 2, 1]))  # True
 
+
+print(has22_v2([1, 2, 2]))  # True
+print(has22_v2([2, 1, 2]))  # False
+print(has22_v2([2, 2, 1]))  # True
