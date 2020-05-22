@@ -1,7 +1,7 @@
 # Given triangle of consecutive odd integers, return sum of given row 
 
 def sum_row(n):
-  return n **3
+  return n ** 3
   
 
 
