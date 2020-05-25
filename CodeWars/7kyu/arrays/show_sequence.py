@@ -31,7 +31,7 @@ def show_sequennce2(n):
       string += str(num) + "+"
   return string[:-1] + " = "  + str(sum) 
 
-# Using counter
+
 def show_sequennce3(n):
     if n == 0:
         return "0=0"
