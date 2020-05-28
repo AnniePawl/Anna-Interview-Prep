@@ -2,6 +2,9 @@
 
 
 def get_ages(sum_, difference):
-age1 + age2 = sum_
+  x = (sum_ + difference)/2 
+  y = (sum_ - difference)/2 
+
+  return (x,y)
 
 print(get_ages(24,4)) # (14,10)
