@@ -1,6 +1,6 @@
 # Write a function that takes in two lists (a and b), annd returns a list of common values in both sets 
 
-# Clarifying Qs: are inputs same type?
+# Clarifying Qs: are inputs same type? What if there's no solution? What if there are duplicates? Can I use built-in sets?
 
 # Brue Force 
 # Time Complexity : O(n) b/c for loop
