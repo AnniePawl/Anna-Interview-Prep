@@ -1,7 +1,6 @@
 # Given array of arrays, return sum of specific set of numbers, starting with elements whose position is equal to main array len and going down by one at a time. 
 
 
-
 def elements_sum(arr, d = 0 ):
   return sum(r[i] if i<len(r) else d for i, r in enumerate(reversed(arr)))
     
