@@ -8,6 +8,7 @@ def delete_chars(str):
   return new_string
 
 
+# using enumerate
 def delete_chars2(str):
   new_string = ""
   for i, char in enumerate(str):
