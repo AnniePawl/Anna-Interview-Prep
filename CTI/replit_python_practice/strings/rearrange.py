@@ -7,14 +7,14 @@ def swap(str):
   else: 
     return str[length//2 + 1:] + str[:length//2 +1 ]
   
-
 def swap2(s):
   mid = (len(s) + 1) //2 
   return (s[mid:] + s[:mid])
-
 
 print(swap('Qwerty')) # rtyQwe
 print(swap('annaP')) # aPann
 
 print(swap2('Qwerty')) # rtyQwe
 print(swap2('annaP')) # aPann
+
+
