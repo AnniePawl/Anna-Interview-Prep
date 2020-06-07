@@ -11,3 +11,13 @@ print(intersection_count([1,2,3], [4,3,2])) # 2
 print(intersection([1,2,3], [4,3,2])) # {2,3}
 
 
+
+def intersection3(a,b):
+  a = "".join(a)
+  return a
+  
+
+print(intersection3("1 2 3 ",  "4 3 2"))
+
+
+
