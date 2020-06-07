@@ -41,6 +41,35 @@ def reverse_bits(num):
   return " ".join(map(str, binary)) # already reversed .. 
 
 
+# Given int > 9, return decimal value of last 2 bits in reverse order. 
+def dec_of_last_bits(num):
+  binary = []
+  while num > 0:
+    if num % 2 == 0: 
+      binary.append(0)
+      num = num // 2
+    else:
+      binary.append(1)
+      num = num //2
+ 
+  last_two = binary[::-1][-2:]
+  last_two_reversed = last_two[::-1]
+
+
+  # Now revert to decmial
+  decimal = 0
+
+  for i in range(1):
+    if last_two_reversed[i] == 1:
+      decimal += 2** i
+  return decimal
+
+
+  
+
+print("Decimal of last two bits in reverse order")
+print(dec_of_last_bits(37)) # 2 
+
 
 
 
