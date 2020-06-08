@@ -3,10 +3,7 @@
 def same_nums(a,b,c):
   if a == b == c:
     return 3 
-  elif a != b != c:
-    return 1
-  else:
-    return 2
+  
   
 
 print(same_nums(1,2,3)) # 1

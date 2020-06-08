@@ -2,13 +2,17 @@
 
 def ascending(num):
   num_list = [x for x in str(num)]
-  for i, j in enumerate(num_list):
-    if j[i] > j[i-1]:
-      return "YES"
-    else:
-      return "NO"
-  
+  return "YES" if num_list == sorted(num_list) else "NO"
+
   
 
 print(ascending(123)) # YES
 print(ascending(321)) # NO
+
+
+
+# Given 3 integers, print them in ascending order
+def ascending_three(a,b,c):
+  return " ".join(map(str, sorted([a,b,c])))
+
+print(ascending_three(5,3,7)) # 3 5 7
