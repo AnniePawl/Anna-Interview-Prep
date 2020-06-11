@@ -25,4 +25,6 @@ def fizzbuzz(num):
 #     print(fizzbuzz)
 
 print(fizzbuzz(5)) # 1,2,fizz,4,buzz
+print(fizzbuzz(7)) # 1,2,fizz,4,buzz
+
 
