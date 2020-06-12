@@ -12,3 +12,4 @@ def rook(nums):
 
 print(rook([4,4,5,5])) # NO
 print(rook([4,4,4,7])) # YES
+
