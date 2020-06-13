@@ -4,7 +4,7 @@ def day_of_week(date):
   date = 1
   day = 4
   for date in range(0,366):
-    day = date //7 -7
+    day = 
   return day
  
   

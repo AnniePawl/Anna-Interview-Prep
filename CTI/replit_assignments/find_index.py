@@ -4,7 +4,7 @@ def find_index(arr, target):
   if target in arr: 
     return arr.index(target)
   else:
-    return arr.index(target-1) + 1
+    
 
 print(find_index([1,3,5,6], 5)) # 2
 print(find_index([1,3,5,6], 2)) # 1
