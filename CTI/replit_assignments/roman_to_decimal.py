@@ -1,23 +1,17 @@
 def roman_to_decimal(roman_numeral):
   arabic_numeral = 0
   i = 0
-  
   while (i < len(roman_numeral)): 
-
     # Getting value of symbol s[i] 
-    s1 = value(roman_numeral[i]) 
-
+    s1 = value(roman_numeral[i])
     if (i+1 < len(roman_numeral)):
-
       # Getting value of symbol s[i+1] (the next number)
       s2 = value(roman_numeral[i+1])
-
       # Comparing both values 
       if (s1 >= s2): 
         pass # when you see "pass", replace it with your code
         # Value of current symbol is greater 
         # or equal to the next symbol 
-
       else: 
         pass # when you see "pass", replace it with your code
         # Value of current symbol is less than 
@@ -46,6 +40,7 @@ def value(roman_char):
    return 1000
   return -1
 
+print(value())
 
 # def value(r): 
 #     if (r == 'I'): 
@@ -67,6 +62,5 @@ def value(roman_char):
 
 
 
-print(value())
 
   
