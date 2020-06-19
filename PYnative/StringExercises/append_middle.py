@@ -8,3 +8,11 @@ def append_middle(s1, s2):
 print(append_middle("Anna", "Joey")) # AnJoeyna
 print(append_middle("doom", "mood")) # domoodom
 print(append_middle("nutellas", "bell")) # nutebellllas
+
+
+# Extra Practice 
+def append_middle2(a,b):
+  middle = len(a)//2
+  return a[:middle] + b + a[middle:]
+
+print(append_middle2("bricks", "pot"))

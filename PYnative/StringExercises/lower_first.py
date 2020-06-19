@@ -14,3 +14,19 @@ def lower_first(str):
 
 print(lower_first("AnnaMillicentPawl")) #nnaillicentawlAMP
 print(lower_first("BBBccc")) #cccBBB
+
+
+# Extra Practice 
+def lower_first(str):
+  lowers = ""
+  uppers = ""
+  
+  for letter in str:
+    if letter.islower():
+      lowers += letter
+    else:
+      uppers += letter
+  return lowers + uppers
+
+
+print(lower_first('GreTTle')) # releGTT

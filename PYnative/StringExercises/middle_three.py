@@ -7,3 +7,11 @@ def middle_three(str):
 
 print(middle_three('Goopy')) # oop
 print(middle_three('america')) # eri
+
+# Extra Practice
+# Remember last index not included
+def middle_three2(str):
+  return str[(len(str)//2)-1: (len(str)//2+2) ]
+
+print(middle_three2("buttons")) # tto
+
