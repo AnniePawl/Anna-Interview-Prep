@@ -5,7 +5,6 @@ def seen(nums):
   for num in nums: 
     if num in num_set:
       print ("YES")
-      num_set.add(num)
 
     else:
       print("NO")
