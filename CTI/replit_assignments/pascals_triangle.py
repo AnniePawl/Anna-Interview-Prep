@@ -41,6 +41,10 @@ print (str(1) * n, end = ' ')
 int_list = [1,3,3,1]
 result = [1,4,6,4,1]
 
+for i in range(len(int_list)):
+  
+
+
 # Given a list of ints , print row w/ len(int) + 1
 # First and last nume printed will be 1 
 # ith num will be sum of value of ith value one 
