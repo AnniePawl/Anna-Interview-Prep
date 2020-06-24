@@ -1,14 +1,17 @@
 # N nums given in input, print their sum 
 # Fist line contains num of integers 
 
-lines = []
-while True:
-  line = input()
-  if line:
-    lines.append(line)
-  else:
-    break 
+a1 = int(input())
+nums = []
+for i in range(a1):
+  nums.append(int(input()))
+print(sum(nums))
 
-lines = [int(x) for x in lines]
-print(sum(lines))
+
+# Solution 2 
+result = 0
+for i in range(int(input())):
+  result += int(input())
+print(result)
+
 
