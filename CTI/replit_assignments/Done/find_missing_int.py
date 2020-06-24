@@ -22,6 +22,27 @@ print(find_pos([1,3,4,5])) # 2
 print(find_pos([3,4,-1,1])) # 2
 print(find_pos([-8,-7,-6])) # 1
 
+# CTI SOLUTION 
+def first_missing_positive_integer(integers):
+
+  found_integers = []
+  first_missing_integer = None
+  for integer in integers:
+    if integer < 0:
+      continue
+    if integer + 1 > (len(found_integers)):
+      extension_length = integer - len(found_integers) + 1
+      found_integers.extend([False] * extension_length)
+    found_integers[integer] = True
+  for position in range(1,len(found_integers)):
+    if found_integers[position] == False:
+      first_missing_integer = position
+      break
+  if first_missing_integer != None:
+    return first_missing_integer
+  else:
+    return max(len(found_integers),1)
+
 
 # def find_pos(nums):
 #   found_ints = []
