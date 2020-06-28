@@ -5,8 +5,9 @@
 
 def validate_sudoku(arr):
   # Check rows and columns 
-  for row in arr:
-    print(row[0])
+  for row in arr:a
+    for column in row:
+      if row[0], 
 
 print(validate_sudoku([
   ["5","3",".",".","7",".",".",".","."],
