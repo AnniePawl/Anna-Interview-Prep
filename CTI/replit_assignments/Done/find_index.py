@@ -23,7 +23,6 @@ def find_index2(arr,target):
       return len(arr)
       
 
-
 print(find_index([1,3,5,6], 5)) # 2
 print(find_index([1,3,5,6], 2)) # 1
 print(find_index([1,3,5,6], 7)) # 4
@@ -36,3 +35,13 @@ print(find_index2([1,3,5,6], 2)) # 1
 print(find_index2([1,3,5,6], 7)) # 4
 print(find_index2([1,3,5,6], 0)) # 0
 
+# CTI Solution 
+def find_index(sorted_list, target):
+    start, end = 0, len(sorted_list)
+    while start < end:
+        pivot = start + (end - start) // 2
+        if sorted_list[pivot] < target:
+            start = pivot + 1
+        else:
+            end = pivot
+    return start
