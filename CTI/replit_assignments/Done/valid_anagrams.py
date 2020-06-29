@@ -11,9 +11,13 @@ def valid_anagrams(s,t):
 print(valid_anagrams('lap','alp')) #True
 print(valid_anagrams('lark','larp')) #False
 
-# Using dictionary  
-
-
+# Without Sort
+# .count() time complexity = O(n)
+def valid_anagrams2(s,t):
+  for letter in s:
+    if s.count(letter) != t.count(letter):
+      return False 
+  return True
 
 
 print(valid_anagrams2('lap','alp')) #True
