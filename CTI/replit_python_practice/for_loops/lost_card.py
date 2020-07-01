@@ -9,5 +9,4 @@ cards.sort()
 
 print(x for x in range(cards[0], cards[-1]+1) if x not in cards)
 
-  return [x for x in range(lst[0], lst[-1]+1)  
-                               if x not in lst]
+print(sorted(set(range(cards[0], cards[-1])) - set(cards)) )
