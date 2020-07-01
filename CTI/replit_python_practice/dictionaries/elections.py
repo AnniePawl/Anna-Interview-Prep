@@ -14,3 +14,17 @@ for key, value in sorted(records.items()):
   print(key, value)
 
 
+# Sample Input 
+# 5
+# McCain 10
+# McCain 5
+# Obama 9
+# Obama 8
+# McCain 1
+
+# Sample Output 
+# McCain 16
+# Obama 17
+
+
+
