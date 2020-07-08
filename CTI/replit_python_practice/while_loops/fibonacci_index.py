@@ -1,23 +1,14 @@
 # Given a positive integer, determine if it's the nth fibonacci numer for some n. If so, print n, else print -1 
 
 # Fibonacci code 
-
-prev, next = 1, 1
-n = int(input())
-for i in range(n-2):
-  prev, next = next, prev + next
-print(next)
-
-
 def fib_index(n):
-  fib_nums = []
-  prev, next =  1, 1
-  for i in range(n-2):
-    prev,next = next, prev + next
-  fib_nums.append(next)
-  return fib_nums
+  fib_list = [0,1]
+  while n >=2:
+    fib_list.append(fib_list[-1] + fib_list[-2])
+    n -= 1 
+  
 
-
-
+ 
+print(fib_index(4)) # -1
 print(fib_index(8)) # 6 
 print(fib_index(34)) # 9 
