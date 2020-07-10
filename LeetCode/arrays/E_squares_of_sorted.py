@@ -38,4 +38,4 @@ def sortedSquares(self, A):
             ans.append(A[j]**2)
             j += 1
 
-        return ans
+        return ansa
