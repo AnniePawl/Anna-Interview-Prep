@@ -6,7 +6,7 @@ def min_chars(chars):
   if chars == chars[::-1]:
     return count
   else:
-    return "poo"
+    chars
 
 
 print(min_chars("ABA")) # 0
