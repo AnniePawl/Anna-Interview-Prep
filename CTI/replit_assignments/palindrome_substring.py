@@ -2,11 +2,12 @@
 # O(n)
 
 def palindrome_substring(s):
+  pass
 
 
 
-print(palindrome_substring("babad")) #bab, or aba 
-print(palindrome_substring("cbbd")) #bb
+# print(palindrome_substring("babad")) #bab, or aba 
+# print(palindrome_substring("cbbd")) #bb
 
 
 # Brute Force - two for loops - one traversing forward and one backwards
