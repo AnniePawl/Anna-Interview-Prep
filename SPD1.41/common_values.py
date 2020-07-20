@@ -21,6 +21,13 @@ def common_vals_brute_force2(a, b):
 def common_vals_set(a, b):
   return set(a).intersection(set(b))
 
+# def common_vals_count(a,b):
+#   a.extend(b)
+#   for item in a:
+#     if a.count(item) > 1:
+#       print(item)
+
+
 
 # TEST
 a = [1,"button",2,3,"toot", 4, True, 5]
@@ -28,3 +35,5 @@ b = [4, False,5,"cookie", 6,7, "toot", 8]
 print(common_vals_brute_force(a, b)) # [4,5,'toot']
 print(common_vals_brute_force2(a, b)) # [4,5, 'toot']
 print(common_vals_set(a, b)) # [4,5, 'toot']
+print(common_vals_count(a,b))
+

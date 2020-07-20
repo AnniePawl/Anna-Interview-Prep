@@ -1,5 +1,6 @@
 # Given a number, return how many primes are in range from 2 to number(non-inclusive). 1 does not count as prime 
 
+# Brute Force 
 # O(n^2) double for loop
 # Helper Function 
 def is_prime(num):
@@ -58,8 +59,10 @@ print(s_o_e(10)) # 4
 print(s_o_e(20)) # 8
 
 def range_practice(n):
-  for num in range(2,n):
-    print(num)
+  primes = [*range(n)]
+  print(primes)
+  for i in range(2,n):
+    print(primes[i])
 
 print("range practice")
 print(range_practice(5))
