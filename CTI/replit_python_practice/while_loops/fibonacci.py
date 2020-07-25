@@ -11,6 +11,22 @@ def fibonacci(n):
 
 print(fibonacci(6))
 
+# This can handle Huge input b/c of memoization
+fib_cache = {}
+def fib_num(n):
+  if n in fib_cache:
+    return fib_cache[n]
+  # compute nth num 
+  if n == 1:
+    value = 1
+  if n == 2:
+    value = 1
+  if n > 2:
+    value = fib_index2(n-1) + fib_index2(n-2)
+  
+  fib_cache[n] = value
+  return value
+
 # Return list of first n fibonacci numbers
 def fibonacci_list(n):
   if n == 0:
