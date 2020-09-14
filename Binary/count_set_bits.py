@@ -19,3 +19,5 @@ print(count_set_bits(3)) # 2
 # Runtime: Count = O(n), bin() = O(log(n)) --> O(n)
 def count_set_bits2(num):
   return bin(num).count("1")
+
+  
