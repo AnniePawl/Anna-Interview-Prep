@@ -4,5 +4,9 @@
 def two_bits(num):
   return num // 2, num % 2
 
+def two_bits2(num):
+  return bin(num)
+
+
 print(two_bits(2)) # 1 0 
 print(two_bits(3)) # 1 1

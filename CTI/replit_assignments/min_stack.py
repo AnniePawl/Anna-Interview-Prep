@@ -11,21 +11,32 @@ class MinStack(object):
         """
         initialize your data structure here.
         """
-        return
+        # Create LL
+        self.head= None
+        self.smallest = None 
+        return 
 
     def push(self, x):
         """
         :type x: int
         :rtype: None
         """
-        return
+        if self.head:
+          # create new node 
+          new_node = LinkedNode(x)
+          if x < self.smallest.data:
+            self.smallest = new_node
+          new_node.next 
         
 
     def pop(self):
         """
         :rtype: None
         """
-        return
+        if sel.head:
+          new_head = self.head.next
+          element = self.head 
+          
 
     def top(self):
         """

@@ -19,7 +19,7 @@ def caesar_cipher(str, k):
     if char.isupper():
       translation += chr((ord(char) + k-65) % 26 + 65)
       print(ord(char) + k-65 % 26 + 65)
-  
+    
       
       
     # Deal w/ lowercase letters
