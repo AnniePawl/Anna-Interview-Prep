@@ -6,3 +6,4 @@ def even_elements(nums):
   
 
 print(even_elements([1,2,2,3,4])) # 2 2 4
+
