@@ -3,6 +3,8 @@
 # Easiest Option 
 def rem_second(arr):
   return arr[::2]
+
+
 def remove_second(arr):
   new_arr= []
   for i, j in enumerate(arr):

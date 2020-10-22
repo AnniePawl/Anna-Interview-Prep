@@ -10,3 +10,4 @@ def distinct_num(nums):
 
 print(distinct_num([1,2,3,2,1])) # 3
 print(distinct_num([1,1,1,1,2])) # 2
+
