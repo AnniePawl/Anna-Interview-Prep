@@ -2,8 +2,12 @@
 
 
 def merge_sorted(arr1,arr2):
-  new_array = arr1
-  print(new_array)
+  for num in arr2:
+    if num in arr1:
+      pass 
+    else:
+      
+  
     
 
 print(merge_sorted([1,3,5], [2,4,6])) #[1,2,3,4,5,6]

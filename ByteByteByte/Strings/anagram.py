@@ -12,13 +12,13 @@ def anagram(s1,s2):
   # Create dictionaries to count occurances of each letter 
   s1_dict = {}
   s2_dict = {}
-  for letter in s1:
+  for letter in s1: # O(n)
     if letter not in s1_dict:
       s1_dict[letter] = 1
     else:
       s1_dict[letter] +=1
 
-  for letter in s2:
+  for letter in s2: O(n)
     if letter not in s2_dict:
       s2_dict[letter] = 1 
     else:
