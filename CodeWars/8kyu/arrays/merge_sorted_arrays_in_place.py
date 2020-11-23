@@ -2,10 +2,9 @@
 # Don't return new arrays, instead modify nums1 in place
 
 
-#  Inefficient Solution 
+
 def merge(arr1,arr2):
-  new_array = arr1 + arr2
-  return sorted(new_array)
+  
 
 print(merge([1,2,3,0,0,0], [2,5,6])) # [1,2,2,2,3,5,6]
 
