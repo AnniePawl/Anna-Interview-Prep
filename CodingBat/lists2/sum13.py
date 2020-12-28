@@ -21,6 +21,13 @@ def sum13_v2(nums):
             sum -= nums[i+1]
     return sum
 
+def sum13_v2(nums):
+    while 13 in nums:
+        if nums.index(13) < len(nums)-1:
+            numd.pop(numd.index(13)+1)
+        nums.pop(nums.index(13))
+    return sum(nums)
+
 # Method 3
 # def sum13_v3(nums):
 #     while 13 in nums:
