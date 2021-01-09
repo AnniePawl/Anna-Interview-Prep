@@ -4,6 +4,9 @@
 
 def shuffle_string(s, i):
   result = ""
+  for i in range(len(s)):
+    resu
+  
 
 
 

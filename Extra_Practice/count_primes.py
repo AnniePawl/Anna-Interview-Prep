@@ -19,12 +19,12 @@ def count_primes_brute_force(n):
   return count
 
 
-print(is_prime(5)) # True
-print(is_prime(4)) # False
-print(is_prime(11)) # True
+# print(is_prime(5)) # True
+# print(is_prime(4)) # False
+# print(is_prime(11)) # True
 
-print(count_primes_brute_force(10)) # 4
-print(count_primes_brute_force(20)) # 8
+# print(count_primes_brute_force(10)) # 4
+# print(count_primes_brute_force(20)) # 8
 
 
 # Solution w/o Helper function 
@@ -42,9 +42,9 @@ def count_primes(num):
 
   return count
 
-print("Count Primes V2 w/o heler function")
-print(count_primes(10)) # 4 
-print(count_primes(20)) # 8  
+# print("Count Primes V2 w/o heler function")
+# print(count_primes(10)) # 4 
+# print(count_primes(20)) # 8  
 
 
 
@@ -69,8 +69,10 @@ print(s_o_e(20)) # 8
 
 count_primes(12) # 5 
  
- count = 2
+#  count = 2
 
- 2 3 4 5 6 7 8 9 10 11
- T T F T F T F T  F   T 
+#  2 3 4 5 6 7 8 9 10 11
+#  T T F T F T F T  F   T 
+
+
 
