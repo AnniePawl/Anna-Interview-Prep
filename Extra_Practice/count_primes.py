@@ -65,7 +65,7 @@ def s_o_e(num):
 
 print("SOE Method")
 print(s_o_e(10)) # 4 
-print(s_o_e(20)) # 8 
+# print(s_o_e(20)) # 8 
 
 count_primes(12) # 5 
  
