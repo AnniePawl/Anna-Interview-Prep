@@ -153,4 +153,62 @@ def caps(s):
 print(caps('Anna')) # Anna
 print(caps('GOfish')) # GOFISH
 
+# 22. Lexigraphically sort stringg 
+def lex_sort(s):
+  return sorted(s, key=str.upper)
 
+print(lex_sort('gAhyCs'))
+
+
+# 23. Remove new line from end of string 
+def remove_new_line(s):
+  return s.rstrip()
+
+print(remove_new_line('Python Exercises\n'))
+
+# 24. Check if str strat wtih specified chars 
+def starts_with(s1,s2):
+  return s1.lower().startswith(s2.lower())
+
+print(starts_with('Anna', 'an')) # True 
+print(starts_with('Anna', 'pn')) # False
+
+# 25. See caesar_cipher.py
+
+# 26. Display formatted text w/ 10 char width  
+# import textwrap
+
+# 27. Remove all indentation from str
+# import textwarp
+
+# 28. Add prefix to each str 
+# import textwrap
+
+# 29. Set indentation 
+
+# 30. Return floating number up to 2 decimal places 
+def twodec(num):
+  print(type('{:.2f}'.format(num))) #this returns a string
+  return float('{:.2f}'.format(num)) #this returns a string
+
+print(twodec(3.141592)) # 3.14
+
+# 31. float w/ sign 
+
+# 32. Return float w/ no decimal places 
+def nodec(num):
+  return '{:.0f}'.format(num)
+  
+print(nodec(3.141592)) # 3
+print(nodec(3.9)) # 4
+
+# 33. print int w/ specified zeros on left 
+#  you can use format or .zfill. This only works on strings
+def zeros(num):
+  print(str(num).zfill(3))
+  print(f'{num:05d}')
+  return '{:03d}'.format(num) # will pad w/ 1 zero 
+  # need to account for original width
+
+
+print(zeros(15)) # 00015
