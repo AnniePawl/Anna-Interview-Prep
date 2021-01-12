@@ -40,3 +40,47 @@ def combine_swap(s1,s2):
   return s3
 
 print(combine_swap('abc', 'xyz')) # xbc ayz
+
+# 6. Add 'ing' to end of string. If string already has 'ing', add, 'ly
+def ing(s):
+  if s.endswith('ing'):
+    s += 'ly'
+  else:
+    s += 'ing'
+  return s
+
+print(ing('string')) #stringly
+print(ing('play')) #playing
+
+# 8 Return longest word and it's len 
+def longest(s):
+  longest = ""
+  count = 0
+  for word in s.split():
+    if len(word) > len(longest):
+      longest = word 
+      count = len(word)
+  return longest, count
+  
+print(longest(s))
+
+# 9. Remove nth char from string 
+def remove_nth(s,n):
+  return s[:n] + s[n+1:]
+
+print(remove_nth('ginger', 2)) #giger
+
+# 10. Exchange first and last chars 
+def swap(s):
+  return s[-1] + s[1:-1] + s[0]
+  
+print(swap('hello')) # oellh
+
+# 11. Remove chars w/ off index values in string 
+def remove_odds(s):
+  for i in range(len(s)):
+    if i % 2 !=0:
+      s[i].replace(s[i], '')
+  return s
+
+print(remove_odds('howdy')) # hwy
