@@ -78,9 +78,79 @@ print(swap('hello')) # oellh
 
 # 11. Remove chars w/ off index values in string 
 def remove_odds(s):
+  result = ""
   for i in range(len(s)):
-    if i % 2 !=0:
-      s[i].replace(s[i], '')
-  return s
+    if i % 2 == 0:
+      result += s[i]
+  return result 
+
 
 print(remove_odds('howdy')) # hwy
+
+# 12. Count occurance of each word in sentence
+def word_occurance(s):
+  histo = {}
+  for word in s.split():
+    if word in histo:
+      histo[word] += 1 
+    else:
+      histo[word] = 1
+  return histo
+
+print(word_occurance('the cat the hat the bat'))
+
+# 13. / 
+
+# 14. / 
+
+# 15. Wrap tag around word 
+def tag(tag, str):
+  return "<" + tag + ">"  + str + "</"  +tag + ">"
+  
+print(tag('li', 'item1s')) # <li>tag</li>
+
+# 16. Insert s2 in middle of s1
+def middle(s1, s2):
+  return s1[:2] + s2 + s1[2:]
+
+print(middle("{{}}", 'PHP')) # {{PHP}}
+
+# 17. Return 4 copies of last 2 chars 
+def repeat_end(s):
+  return s[-2:] * 4
+
+print(repeat_end('python')) # onononon
+
+# 18. Return first 3 chars. If str less than 3, return original str
+def first_three(s):
+  return s[:3] if len(s) > 3 else s
+
+print(first_three('python')) #pyt
+print(first_three('go')) #go
+
+# 19. / 
+
+# 20. Return reversed str if length is multiple of 4 
+def reverse_4(s):
+  if len(s) % 4 == 0:
+    return s[::-1]
+  return s
+
+print(reverse_4('hell')) #lleh
+print(reverse_4('hello')) #hello
+print(reverse_4('papercut')) #tucrepap
+
+# 21. If str has at least 2 uppercase in first 4 chars, return all caps. 
+def caps(s):
+  count = 0
+  for letter in s[:4]:
+    if letter.isupper():
+      count +=1
+  if count >= 2:
+    return s.upper()
+  return s
+
+print(caps('Anna')) # Anna
+print(caps('GOfish')) # GOFISH
+
+
