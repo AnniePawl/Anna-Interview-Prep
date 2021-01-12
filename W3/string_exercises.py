@@ -210,5 +210,49 @@ def zeros(num):
   return '{:03d}'.format(num) # will pad w/ 1 zero 
   # need to account for original width
 
-
 print(zeros(15)) # 00015
+
+# 34. Add 3 stars to right on int 
+def add_stars(num):
+  return f'{num:*<4d}'
+
+print(add_stars(5)) # 5***
+
+# 35. Add commas to value 
+def commas(num):
+  # print('{:,}'.format(num))
+  return f'{num:,}'
+
+print(commas(3000000)) #3,000,000
+
+# 36. Format num w/ percentage 
+# number before p% specified number of decimal places
+def percentage(num):
+  return f'{num:.0%}'
+
+print(percentage(.25)) # 25%
+
+# 37. format 
+
+# 38. Count occurances of substring 
+def substring2(s1,s2):
+  return s1.count(s2)
+
+print(substring2('annabannanna', 'an')) # 3
+
+# 39. Reverse string 
+def reverse(s):
+  print(''.join(reversed(s)))
+  return s[::-1]
+
+# 40. Reverse words in a string 
+def reverse_words(s):
+  return ' '.join(s.split(' ')[::-1])
+
+print(reverse_words('hansel and grettle')) # grettle and hansel
+
+# 41. Strip set of chars from string 
+def string_chars(s1,s2):
+  return "".join(letter for letter in s1 if letter not in s2)
+
+print(string_chars('otter bot', 'o')) # tter bt
