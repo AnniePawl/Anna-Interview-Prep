@@ -153,3 +153,114 @@ def threed():
   print(array)
 
 print(threed())
+
+# 14 . Remove even numbers from a list 
+def remove_evens(nums):
+  for num in nums:
+    if num % 2 == 0:
+      nums.remove(num)
+  return nums
+
+def remove_evens2(nums):
+  return [num for num in nums if num % 2 != 0]
+
+print(remove_evens(nums))
+print(remove_evens2(nums))
+
+# 15. shuffle list. import shufft 
+
+# 16. Print list squares from range 1,10
+def squares():
+  squares = [num**2 for num in range(1,10)]
+  return squares
+
+print(squares())
+
+# 17. / 
+
+# 18. Generate all permutations of a list 
+# import intertools
+
+# 19. Get difference betwenn 2 listss
+def difference(l1,l2):
+  # without set 
+  print(l1+l2)
+  return [num for num in l1 + l2 if num not in l1 or num not in l2]
+
+def difference2(l1,l2):
+  # using set
+  diff1 = list(set(l1) - set(l2))
+  diff2 = list(set(l2) - set(l1))
+  return diff1+diff2
+
+print(difference([1,2,3],[3,4,5])) # [1,2,4,5]
+print(difference2([1,2,3],[3,4,5])) # [1,2,4,5]
+
+# 20. Return each value in list and it's index
+def ienum(nums):
+  for i, num in enumerate(nums):
+    print(i, num)
+
+print(ienum([1,2,3]))
+
+# 21. Convery list of chars into a string 
+def char_str(chars):
+  return ''.join(chars)
+
+print(char_str(['a','n','n','a']))
+
+
+# 22. Find index of a specific item in list 
+def find_index(list, num):
+  return list.index(num)
+
+print(find_index([1,2,3,4], 4)) # 3
+
+# 23. Combine multiple lists into one list 
+# you can also import intertools and use .chain
+def combine_lists(l):
+  new_list= []
+  for minilist in l:
+    for item in minilist:
+      new_list.append(item)
+
+  return new_list
+
+print(combine_lists([[1,2], [3,4], [5,6]])) # [1,2,3,4,5,6]
+  
+
+# 24. Append l2 to l1 
+def appendlist(l1,l2):
+  return l1 + l2
+
+print(appendlist([1,2], [3,4]))
+
+# 25. Randomly select item from list 
+# import random 
+# print(random.choice(list))
+
+# Check if 2 lists are circularly simialr 
+
+# 27. Find second smallest number in a list 
+def second_smallest(l):
+  # sort list and find item at 1st index  (only works if list doesnt have duplicates)
+  # return sorted(l)[1]
+  return sorted(list(set(l)))[1]
+
+print(second_smallest([3,5,6,2,1,1])) # 2
+
+# 28. Find second largest number in list 
+
+# 29. Extract unique values from a list 
+def unique_vals(nums):
+  # using dict 
+  vals = {}
+  for num in nums:
+    if num in vals:
+      vals[num] += num 
+    else:
+      vals[nums] = 1
+
+
+
+print(unique_vals([1,1,2,3,3,4])) # 2,4s
