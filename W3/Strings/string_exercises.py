@@ -256,3 +256,5 @@ def string_chars(s1,s2):
   return "".join(letter for letter in s1 if letter not in s2)
 
 print(string_chars('otter bot', 'o')) # tter bt
+
+# 42. 
