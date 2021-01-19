@@ -361,3 +361,23 @@ print(non_repeating('aaabbccaffgg')) # all letters repeat
 
 
 # 53. Find first repeated char in given string 
+# See repeated_chars.py
+
+# 54. Find first repeated char where index of first occurance is smallest 
+
+# 55. First repeated word in str 
+
+# 56. Second most repeated word in str
+def second_most_repeated(str):
+  counts = {}
+  for word in str.split(' '):
+    if word in counts: 
+      counts[word] += 1 
+    else: 
+      counts[word] = 1
+  # sort dict 
+  new_counts = sorted(counts.items(), key = lambda kv: kv[1])
+  return new_counts[-2][0]
+
+
+print(second_most_repeated("ba ab ba ab ca cd ab")) # ba
