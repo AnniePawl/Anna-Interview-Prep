@@ -339,12 +339,25 @@ print(split('1,2,3,4,5', ',')) # ['1,2,3,4', '5']
 
 # 51. Find first non repearting char in given string  
 def non_repeating(str):
-  for i in range(len(str)-1):
-    if str[i] == str[i+1]:
-      continue 
+  freqs = {}
+  for letter in str:
+    if letter in freqs:
+      freqs[letter] += 1 
     else:
-      if str[i+1] != str[i+2]:
-        return str[i+2]
+      freqs[letter] = 1 
+   
+  for letter in freqs:
+    if freqs[letter] == 1:
+      return letter
+  return 'all letters repeat'
+  
+
 
 print(non_repeating('aaabbcdd')) # c
-print(non_repeating('aaabbcca')) # a ? 
+print(non_repeating('aaabbccaffgg')) # all letters repeat 
+
+
+# 52. Print all permutations with given repetition number of chars in given string
+
+
+# 53. Find first repeated char in given string 
