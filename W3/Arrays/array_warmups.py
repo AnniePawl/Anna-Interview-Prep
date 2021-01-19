@@ -252,15 +252,48 @@ print(second_smallest([3,5,6,2,1,1])) # 2
 # 28. Find second largest number in list 
 
 # 29. Extract unique values from a list 
+# Using dictionary
 def unique_vals(nums):
-  # using dict 
+  unique = []
   vals = {}
   for num in nums:
     if num in vals:
       vals[num] += num 
     else:
-      vals[nums] = 1
+      vals[num] = 1
+  for key, value in vals.items():
+    if value == 1:
+      unique.append(key)
+  return unique
+
+print(unique_vals([1,1,2,3,3,4])) # 2,4
+
+# 30. Get frequeny of elements in a list 
+# You can use counter from collections
+def frequency(list):
+  histo = {}
+  for item in list:
+    if item in histo:
+      histo[item] += 1 
+    else:
+      histo[item] = 1 
+  return histo
+
+print(frequency([1,1,2,'two', 'two', 4, 'annas']))
+
+# 31. Count number of elements in specified range 
+def num_in_range(nums, min, max):
+  count = 0
+  for num in nums: 
+    if num < max and num > min:
+      count +=1 
+  return count
+
+print(num_in_range([10,20,30,40,40,70,80,99], 40,100))
 
 
+# 32. Check if list contains sublist 
+# See sublists.py
 
-print(unique_vals([1,1,2,3,3,4])) # 2,4s
+# 33. Generate all sublists of alist 
+# see sublists.py

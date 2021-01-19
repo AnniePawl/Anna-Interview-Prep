@@ -257,4 +257,94 @@ def string_chars(s1,s2):
 
 print(string_chars('otter bot', 'o')) # tter bt
 
-# 42. 
+# 42. Count repeated chars in a string 
+# make a dict of char occurances, then iterate over dictoionary. if letter appears more than once, print it 
+def repeat(str):
+  histo = {}
+  for letter in str:
+    if letter in histo:
+      histo[letter] += 1
+    else:
+      histo[letter] =1
+  
+  for key, value in histo.items():
+    if value > 1:
+      print(key, value)
+
+print(repeat('thequickbrownfoxjumpsoverthelazydog'))
+
+# 43. Print square and cube symbol in area of 
+
+# 44. Print indx of char in str
+def i(str, char):
+  return str.index(chars)
+
+# 45.  CHeck if a string contains all letters of alphabet 
+
+# 46. Convery String into list 
+def string_list_word(str):
+  return list(str)
+
+def string_list_sentence(str):
+  return str.split(' ')
+
+print(string_list_word('anna')) # [a,n,n,a]
+print(string_list_sentence('anna is cool')) # [anna, is, cool]
+
+
+# 47. Convery first n chars to lowercase 
+def first_n_lower(str, n):
+  return str[:3].lower() + str[3:]
+
+print(first_n_lower('ANNAISCOOL', 4)) #annAISCOOL
+
+
+#48. Swap comma and dot in str 
+# Replace will only swap one for another 
+# Use translate() to deal with two swaps
+def swap_chars(str):
+  maketrans = str.maketrans
+  str = str.translate(maketrans(',.', '.,'))
+  return str
+
+print(swap_chars('A.D,')) # A,D.
+
+# 49. Count and display vowels from given text 
+def count_vowels(str):
+   # str? 
+  counts = {'a':0, 'e':0, 'i':0, 'o':0, 'u':0}
+  for letter in str:
+    if letter in counts:
+      counts[letter] +=1 
+  
+  for key, value in counts.items():
+    print(key, value)
+
+print(count_vowels('anna is even oranger')) # {a:3, e:2, i:1, o: 1, u:0}
+
+
+# 49.5 Return total count of vowels in a string
+def count_vowels2(str):
+  vowels = 'aeiou'
+  return sum(1 for letter in str if letter in vowels)
+  # return len([letter for letter in str if letter in vowels])
+
+print(count_vowels2('anna is even oranger')) # {a:3, e:2, i:1, o: 1, u:0}
+
+# 50. Split string on last occurance of delimeter
+def split(str, delimeter):
+  return str.rsplit(delimeter, 1)
+
+print(split('1,2,3,4,5', ',')) # ['1,2,3,4', '5']
+
+# 51. Find first non repearting char in given string  
+def non_repeating(str):
+  for i in range(len(str)-1):
+    if str[i] == str[i+1]:
+      continue 
+    else:
+      if str[i+1] != str[i+2]:
+        return str[i+2]
+
+print(non_repeating('aaabbcdd')) # c
+print(non_repeating('aaabbcca')) # a ? 
