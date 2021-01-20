@@ -370,14 +370,120 @@ print(non_repeating('aaabbccaffgg')) # all letters repeat
 # 56. Second most repeated word in str
 def second_most_repeated(str):
   counts = {}
-  for word in str.split(' '):
-    if word in counts: 
-      counts[word] += 1 
+  for letter in str.split():
+    if letter in counts: 
+      counts[letter] += 1 
+    else:
+      counts[letter] = 1 
+  
+  return(sorted(counts.items(), key = lambda kv: kv[1]))[-2][0]
+  
+
+
+print(second_most_repeated('ab ba ba ab ba cd')) # ab
+
+# 57. Remove spaces from string 
+def remove_spaces(str):
+  return str.replace(' ','')
+
+print(remove_spaces('hi there sweets')) # 'hitheresweet
+
+# 58. remove spaces from front of string 
+def front_space(str):
+  return str.lstrip()
+print(front_space('   anna')) #anna
+
+# 59. Find max occuring char 
+def max_occuring(str):
+  counts = {}
+  for letter in str.replace(' ',''):
+    if letter in counts:
+      counts[letter] +=1
+    else:
+      counts[letter] = 1 
+
+  return sorted(counts.items(), key=lambda kv:kv[1])[-1][0]
+
+def max_occuring2(str):
+  counts = {}
+  for letter in str.replace(' ',''):
+    if letter in counts:
+      counts[letter] +=1
+    else:
+      counts[letter] = 1 
+
+  return max(counts, key=counts.get)
+
+
+print(max_occuring('hi my name is bob and i like cats'))
+print(max_occuring2('hi my name is bob and i like cats'))
+
+# 60. Capitalize first and last letter of each word in str 
+def cap_first_last(str):
+  result = ""
+  for word in str.split():
+    result += word[0].upper() + word [1:-1] + word[-1].upper() + " "  
+  return result
+
+
+print(cap_first_last('anna is cool')) # AnnA IS CooL
+
+# 61. Remove duplicate chars 
+def remove_dups(str):
+  # doesnt return in order 
+  # return ''.join(set(str))
+  return ''.join(dict.fromkeys(str)) # returns in order
+  
+
+print(remove_dups('butter')) #buter
+
+# 62. Compute sum of digits in given string 
+# this sums individial digits but doesnt account for digits next to eachother 
+def sum_str_digits(str):
+  digits = [int(char) for char in str if char.isdigit()]
+  return sum(digits)
+
+# accounts for digits next to eachother
+def sum_str_digits2(str):
+  temp = '0'
+  digits = []
+  for i in range(len(str)):
+    if str[i].isdigit():
+      temp += str[i]
+    else:
+      digits.append(temp)
+      temp = '0'
+  # Add whatever remains in temp to account for last char in str being digit 
+  return sum(int(digit) for digit in digits) + int(temp)
+
+
+print(sum_str_digits('1gh3io22j')) # 26
+print(sum_str_digits2('123a')) # 123
+print(sum_str_digits2('1gh3io22j')) # 26
+print(sum_str_digits2('1gh3io22j3')) # 29
+
+# 63. Remove leading zeros from IP address 
+
+# 64. Find max len of consecutive 0's in bianry string 
+def max_zeros(str):
+  temp = 0
+  max = 0 
+
+  for digit in str:
+    if digit == '0':
+      temp +=1
     else: 
-      counts[word] = 1
-  # sort dict 
-  new_counts = sorted(counts.items(), key = lambda kv: kv[1])
-  return new_counts[-2][0]
+      if temp > max:
+        max = temp 
+        temp = 0
+  return max
+ 
 
+print(max_zeros('1001100010')) # 3
 
-print(second_most_repeated("ba ab ba ab ca cd ab")) # ba
+# 65. Return common letters (in lexigraphical order) from 2 strings
+def common_letters(s1,s2):
+  return ''.join(sorted(set(s1).intersection(set(s2))))
+  
+print(common_letters('butterfly', 'baffle')) # befl
+
