@@ -39,7 +39,7 @@ def countPrimes2(n):
 
 
 
-print(countPrimes(10)) # 4
+print(countPrimes(10)) # 4 
 print(countPrimes(20)) # 8
 
 print(countPrimes2(10)) # 4
