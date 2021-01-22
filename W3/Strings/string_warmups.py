@@ -530,3 +530,58 @@ def two_strings2(s): # O(n)
 
 print(two_strings('apple bottom jeans')) # 'lbmns' 'apeto'
 print(two_strings2('apple bottom jeans')) # 'lbmns' 'apeto'
+
+# 69. Longest Common substring
+#  See longest_common_substring.py
+
+# 71. Move all spaces to front of string in single traversal 
+# V1 not in single traversal
+def move_spaces(str):
+  count = sum(1 for char in str if char == ' ')
+  return ' '*count  + str.replace(' ', '')
+
+print(move_spaces('i am a cat')) #'   iamacat'
+
+
+# 72. Remove all chars except specified char from string 
+def remove_all(str, x):
+  return ''.join([char for char in str if char==x])
+
+print(remove_all('google','g')) # gg
+
+
+# 73. count uppercase and lowercase 
+def count_upper_lower(s):
+  upper = 0 
+  lower = 0
+  for letter in s:
+    if letter.isupper():
+      upper +=1 
+    else:
+      lower +=1 
+  return 'Upper: ' + str(upper) + ' Lower: ' + str(lower)
+
+print(count_upper_lower('Cat In The Hat')) 
+
+# 76. Count substrings w/ exactly k distinct chars. 
+#  See substrings_distinct_chars.py
+
+# 77. Count non-empty substrings of given string
+# Formula for calculating all substrings ? 
+
+#  78. Count chars at same position in string as position in english alphabet 
+
+# 79. Final smallest and largest word in str 
+def smallest_largest(s):
+  words = s.split()
+  # note that min and max return first and last word alphabetically
+  min = words[0]
+  max = words[0]
+  for word in words: 
+    if len(word) > len(max):
+      max = word 
+    if len(word) < len(min):
+      min = word 
+  return min, max 
+
+print(smallest_largest('how can i grow larger')) # i, larger
