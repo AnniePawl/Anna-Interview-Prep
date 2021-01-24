@@ -585,3 +585,6 @@ def smallest_largest(s):
   return min, max 
 
 print(smallest_largest('how can i grow larger')) # i, larger
+
+# 80. Count substrings w/ same first and last chars 
+# See sub_string_first_last.py
