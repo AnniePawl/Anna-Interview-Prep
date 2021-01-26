@@ -588,3 +588,59 @@ print(smallest_largest('how can i grow larger')) # i, larger
 
 # 80. Count substrings w/ same first and last chars 
 # See sub_string_first_last.py
+
+# 81. Find index of given string at which a given substring starts. 
+# shortcut 
+def substring_index(s, sub):
+  return s.index(sub)
+
+# 81. 
+def substring_index2(s,sub):
+  pass
+
+print(substring_index("Python Exercises", "Ex")) # 7 
+print(substring_index("Python Exercises", "yt")) # 7 
+
+print(substring_index("Python Exercises2", "Ex")) # 7 
+print(substring_index("Python Exercises2", "yt")) # 7 
+
+#82. Wrap a string into a paragraph of a given width 
+def wrap_width(s, width):
+  pass 
+
+print(wrap_width('pretty', 4))
+
+# 83. Front 4 values of a decimal in capitalized hexadecimal, binary in single line of a given integer 
+
+# 84. Swap cases of a given string
+# remember strings are immutable
+def swap_cases(s):
+  new =''
+  for letter in s:
+    if letter.isupper():
+      new += letter.lower()
+    else:
+      new += letter.upper()
+  return new
+
+print(swap_cases('Blue Moon')) # bLUE mOON
+
+# 85. Convert Bytearray into Hexadecimal 
+
+# 86. Delete all occurances of specified char 
+def delete_stuff(str, char):
+  pass 
+
+print(delete_stuff('hello lovely', 'l')) #heoovey
+
+# 87. Find common values that appear in two strings 
+def common_str(s1,s2):
+  pass 
+
+print(common_str('')
+
+# 88. Check if given string contains capital letter, lowercase letter, num, and min len 
+def check_s(s):
+  pass 
+
+print(check_s('Happy 8th Birthday'))
