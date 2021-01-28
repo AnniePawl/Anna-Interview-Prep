@@ -16,7 +16,7 @@ def palindrome(s):
 
 print(palindrome("racecar")) # True
 print(palindrome("Race Car!!")) # True
-print(palindrome("peanut")) # True
+print(palindrome("peanut")) # False
 
 
 # Strategy Two 
@@ -43,4 +43,4 @@ def is_palindrome2(s):
 
 print(is_palindrome2("racecar")) # True
 print(is_palindrome2("Race Car!!")) # True
-print(is_palindrome2("peanut")) # True
+print(is_palindrome2("peanut")) # False

@@ -4,11 +4,6 @@
 # Same String
 
 def buddy_string(a,b):
-  # quick check 
-  if len(a) != len(b):
-    return False
-  for i in range(len(a)):
-
 
   
   

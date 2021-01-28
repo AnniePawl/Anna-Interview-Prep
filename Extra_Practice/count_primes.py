@@ -25,3 +25,4 @@ print(isPrime(4)) # False
 print(count_primes(10)) # 4
 print(count_primes(15)) # 6
 
+

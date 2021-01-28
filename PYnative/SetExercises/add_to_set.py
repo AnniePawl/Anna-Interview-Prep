@@ -9,3 +9,10 @@ def add_to_set():
   return set1
 
 print(add_to_set())
+
+
+newSet = {'greetings'}
+print(newSet)
+
+newSet = set([1,2,'boo',4])
+print(newSet)

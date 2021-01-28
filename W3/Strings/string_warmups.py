@@ -627,20 +627,3 @@ print(swap_cases('Blue Moon')) # bLUE mOON
 
 # 85. Convert Bytearray into Hexadecimal 
 
-# 86. Delete all occurances of specified char 
-def delete_stuff(str, char):
-  pass 
-
-print(delete_stuff('hello lovely', 'l')) #heoovey
-
-# 87. Find common values that appear in two strings 
-def common_str(s1,s2):
-  pass 
-
-print(common_str('')
-
-# 88. Check if given string contains capital letter, lowercase letter, num, and min len 
-def check_s(s):
-  pass 
-
-print(check_s('Happy 8th Birthday'))
